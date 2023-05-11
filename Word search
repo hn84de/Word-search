@@ -1,0 +1,30 @@
+function check(word, string){
+    let x = 0;
+    let w = word.length;
+    let s = string.length;
+    let ss = "";
+    for(let i = 0; i<s; i++){
+        ss = "";
+        try{
+for(let j = 0; j<w; j++){
+    try{
+    ss += string[i+j];
+    }catch(error){
+        let z = 0;
+    }
+}
+        }catch(error){
+let z = 0;
+        }
+        if(ss == word){
+            x++;
+        }else{
+            let z = 0;
+        }
+    }
+    if(x>0){
+        console.log("Yes");
+    }else{
+        console.log("No");
+    }
+}
