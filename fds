@@ -1,0 +1,43 @@
+function check(word, string){
+    let x = 0;
+    let w = word.length;
+    let s = string.length;
+    let ss = "";
+    for(let i = 0; i<s; i++){
+        ss = "";
+        try{
+for(let j = 0; j<w; j++){
+    try{
+    ss += string[i+j];
+    }catch(error){
+        let z = 0;
+    }
+}
+        }catch(error){
+let z = 0;
+        }
+        if(ss == word){
+            x++;
+        }else{
+            let z = 0;
+        }
+    }
+    if(x>0){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+for(let i = 0; i<50; i++){
+    let sto = "";
+    try{
+        sto = String(String(window.cel_widgets[2].w[i].baseURI).split("https://www.amazon.com/s?k=laptop&page=")[1] + "-" + i);
+        if(check("i7-12", window.cel_widgets[2].w[i].innerText) == 1 && String($x(`/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[${i+1}]/div/div/div/div/div/div/div/div[2]/div/div/div[1]/h2/a`)[0]) != "undefined"){
+            console.log(i);
+            console.log($x(`/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[${i+1}]/div/div/div/div/div/div/div/div[2]/div/div/div[1]/h2/a`)[0]);
+            console.log($x(`/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[${i+1}]/div/div/div/div/div/div/div/div[2]/div/div/div[1]/h2/a`)[0].href);
+            console.log(String(window.cel_widgets[2].w[i].baseURI).split("https://www.amazon.com/s?k=laptop&page=")[1] + "-" + i);
+            console.log(sto);
+            localStorage.setItem(sto, $x(`/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[${i+1}]/div/div/div/div/div/div/div/div[2]/div/div/div[1]/h2/a`)[0].href);
+        }else{
+            let z = 0;}}catch(error){let z = 0;}}
